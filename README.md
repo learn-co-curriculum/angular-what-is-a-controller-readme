@@ -13,17 +13,17 @@ We've talked about controllers before, and now is the time to go into them. Cont
 
 ## Controllers
 
-You might have noticed that we've mentioned the concept of Controllers quite a lot. These are the backbone for your Angular applications, providing the link between the view and the model.
+You might have noticed that we've mentioned the concept of Controllers quite a lot. These are the backbone for your Angular applications, providing the link between the view and the model. Controllers control our data - they handle everything from the user's input to notifications from the backend telling us that data has been updated. Think of them as the brain - co-ordinating everything.
 
 Controllers differ slightly depending on your architecture. If we're using MVC our controller does a lot more than if we're using MVVM. The nicknames for the controller in these situations are fat and thin controllers.
 
 ### Business/Presentational Logic
 
-We'll be using the terms "business" and "presentational" logic quite a lot, so it's important that we understand what these are.
+We'll be using the terms "business" and "presentational" logic quite a lot, so it's important that we understand what these are. Both of these can happen inside of our controllers, depending on our architectural approach.
 
-Business logic is all the logic we have to do in order to manipulate our model. For instance, retrieving data from an API endpoint and updating it. If we go back to our coffee shop example, the business logic would be the barista making our coffee.
+Business logic is all the logic we have to do in order to manipulate our model. For instance, retrieving data from an API endpoint and updating it. If we go back to our coffee shop example, the business logic would be the barista making our coffee. The end user doesn't need to have any idea how their coffee is made - all they care about is that it's made. Everything else is behind the scenes.
 
-Presentational logic is when we adapt our model to be displayed correctly in the view. This would be the barista adding our name to the cup as they hand us the drink.
+Presentational logic is when we adapt our model to be displayed correctly in the view. This would be the barista adding our name to the cup as they hand us the drink. They don't care what the coffee is - only that it's there, and they've wrote your name on the lid.
 
 ### MVC: Fat Controller  
 
