@@ -61,3 +61,4 @@ We then referenced and initiated that controller in our HTML:
 ```
 
 It's important that we initiated our controller inside our initiated module `app` because our controller is assigned to the module `app`. If we tried to use it in a different module, we'd get an error.
+<p data-visibility='hidden'>View <a href='https://learn.co/lessons/angular-what-is-a-controller-readme' title='angular-what-is-a-controller-readme'>angular-what-is-a-controller-readme</a> on Learn.co and start learning to code for free.</p>
