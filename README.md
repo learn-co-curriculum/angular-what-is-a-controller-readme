@@ -23,11 +23,11 @@ We'll be using the terms "business" and "presentational" logic quite a lot, so i
 
 Business logic is all the logic we have to do in order to manipulate our model. For instance, retrieving data from an API endpoint and updating it. If we go back to our coffee shop example, the business logic would be the barista making our coffee. The end user doesn't need to have any idea how their coffee is made - all they care about is that it's made. Everything else is behind the scenes.
 
-Presentational logic is when we adapt our model to be displayed correctly in the view. This would be the barista adding our name to the cup as they hand us the drink. They don't care what the coffee is - only that it's there, and they've wrote your name on the lid.
+Presentational logic is when we adapt our model to be displayed correctly in the view. This would be the barista adding our name to the cup as they hand us the drink. They don't care what the coffee is - only that it's there and that they've written your name on the lid.
 
 ### MVC: Fat Controller  
 
-A fat controller deals with a lot. The controller will fetch all of the model data we need, and do all of the business logic/presentational logic.
+A fat controller deals with a lot. The controller will fetch all of the model data we need and do all of the business logic/presentational logic.
 
 ### MVVM: Thin Controllers
 
@@ -46,7 +46,7 @@ angular
   .module('app')
   .controller('MainController', MainController);
 ```
-Our controllers are just JavaScript functions. We then use `$scope` (we're covering everything you'll need to know about `$scope` in the next lesson). In short term, `$scope` allows us to put information *into* our views. This is why our first lab has "Hello, PUT YOUR NAME HERE!" when you load the page!
+Our controllers are just JavaScript functions. We then use `$scope` (we're covering everything you'll need to know about `$scope` in the next lesson). In short, `$scope` allows us to put information *into* our views. This is why our first lab has "Hello, PUT YOUR NAME HERE!" when you load the page!
 
 We also assigned the controller to our module named `app`.
 
@@ -61,4 +61,5 @@ We then referenced and initiated that controller in our HTML:
 ```
 
 It's important that we initiated our controller inside our initiated module `app` because our controller is assigned to the module `app`. If we tried to use it in a different module, we'd get an error.
-<p data-visibility='hidden'>View <a href='https://learn.co/lessons/angular-what-is-a-controller-readme' title='angular-what-is-a-controller-readme'>angular-what-is-a-controller-readme</a> on Learn.co and start learning to code for free.</p>
+
+<p data-visibility='hidden'>View <a href='https://learn.co/lessons/angular-what-is-a-controller-readme' title='What is a Controller?'>What is a Controller?</a> on Learn.co and start learning to code for free.</p>
